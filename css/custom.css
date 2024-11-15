@@ -25,3 +25,8 @@
     background: url('https://pic1.zhimg.com/v2-5bc1f1dfd6b29a08e521b531cae39fe7_r.jpg?source=1940ef5c') no-repeat center center fixed;
     background-size: cover;
   }
+/* 翻页按钮居中 */
+#pagination {
+    width: 100%;
+    margin: auto;
+  }

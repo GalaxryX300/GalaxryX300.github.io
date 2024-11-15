@@ -1,0 +1,27 @@
+/* 页脚与头图透明 */
+#footer {
+    background: transparent ;
+  }
+  #page-header {
+    background: transparent ;
+  }
+  
+  /* 白天模式遮罩透明 */
+  #footer::before {
+    background: transparent ;
+  }
+  #page-header::before {
+    background: transparent ;
+  }
+  
+  /* 夜间模式遮罩透明 */
+  [data-theme="dark"] #footer::before {
+    background: transparent ;
+  }
+  [data-theme="dark"] #page-header::before {
+    background: transparent ;
+  }
+  body {
+    background: url('https://pic1.zhimg.com/v2-5bc1f1dfd6b29a08e521b531cae39fe7_r.jpg?source=1940ef5c') no-repeat center center fixed;
+    background-size: cover;
+  }

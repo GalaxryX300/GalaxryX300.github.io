@@ -253,6 +253,25 @@ h6::before {
   display: none;
 }
 
+/* 自定义文章版权区域颜色（可修改下面颜色值） */
+:root {
+  --post-copyright-color: #1fa9e4; /* 标题与图标颜色 */
+  --post-copyright-link-color: #1fa9e4; /* 链接颜色 */
+}
+[data-theme="dark"] {
+  --post-copyright-color: #66d9ef;
+  --post-copyright-link-color: #66d9ef;
+}
+#post .post-copyright:before {
+  color: var(--post-copyright-color) !important;
+}
+#post .post-copyright .post-copyright-meta {
+  color: var(--post-copyright-color) !important;
+}
+#post .post-copyright .post-copyright-info a {
+  color: var(--post-copyright-link-color) !important;
+}
+
 /* 侧边栏个人信息卡片动态渐变色 */
 #aside-content > .card-widget.card-info {
   background: linear-gradient(

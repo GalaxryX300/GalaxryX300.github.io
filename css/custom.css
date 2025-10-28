@@ -271,6 +271,14 @@ h6::before {
 #post .post-copyright .post-copyright-info a {
   color: var(--post-copyright-link-color) !important;
 }
+/* 增强覆盖范围，确保标题与文本同色 */
+#post .post-copyright,
+#post .post-copyright .post-copyright__title,
+#post .post-copyright .post-copyright__type,
+#post .post-copyright .post-copyright-info,
+#post .post-copyright .post-copyright-info h {
+  color: var(--post-copyright-color) !important;
+}
 
 /* 侧边栏个人信息卡片动态渐变色 */
 #aside-content > .card-widget.card-info {
